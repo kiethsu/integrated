@@ -276,6 +276,181 @@
     font-family: 'Roboto', sans-serif;
     margin: 2% 0;
   }
+  /* Responsive adjustments */
+@media (max-width: 1800px) and (min-width: 720px) {
+  .container {
+  display: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 800px;
+  padding: 20px;
+  background-color: #4e000000;
+  }
+
+  .video-section {
+    width: 70%;
+    height: 100%;
+  }
+
+  .video-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.5);
+  z-index: 15;
+  border-radius: 10px;
+}
+
+  .form-container {
+    width: 40%;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 95%;
+  }
+
+  .return-link {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.return-link a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+.return-link a:hover {
+  text-decoration: underline;
+}
+
+  .input-container {
+    margin-bottom: 25px;
+  }
+
+  .floating-label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 12px;
+  color: #999;
+  transition: 0.2s ease all;
+}
+
+input {
+  padding: 14px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  border-width: .5px;
+}
+
+input:focus + .floating-label,
+input:not(:placeholder-shown) + .floating-label {
+  top: -25px;
+  left: -14px;
+  font-size: 12px;
+  color: #000000;
+}
+
+  input {
+    padding: 5px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .services {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .bottom-link {
+    font-size: 8px;
+  }
+
+  .bottom-link a {
+      text-decoration: none;
+      color: blue;
+      font-size: 10px; /* Font size */
+      font-weight: 500;
+      font-family: 'Fira sans', sans-serif; /* Font family */
+    }
+
+  .signin span {
+    font-size: 35px;
+    padding-top: 50px;
+  }
+
+  .toggle-password {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 30%;
+}
+
+.toggle-password i {
+  font-size: 16px;
+}
+.services {
+      padding: 6px;
+      border: none;
+      background-color: #004aad; /* Initial background color */
+      color: white; /* Text color */
+      font-size: 8px; /* Font size */
+      font-family: 'Fira sans', sans-serif; /* Font family */
+      border-radius: 10px; /* Rounded corners */
+      cursor: pointer; /* Pointer cursor on hover */
+      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    }
+
+.overlay-container {
+    position: absolute;
+    top: 27%; /* Centers vertically based on viewport height */
+    left: 45.3%; /* Centers horizontally */
+    transform: translate(-86%, -20%); /* Ensures the container stays centered */
+    z-index: 16;
+    width: 20%; /* Percentage-based width for responsive scaling */
+    max-width: 400px; /* Adds a max-width to control excessive growth on large screens */
+    padding: 2%; /* Responsive padding */
+    background: rgba(202, 202, 202, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    height: 60%;
+  }
+
+  .overlay-container img {
+    width: 70%; /* Makes the image responsive within container */
+    height: auto;
+    margin-bottom: 3%;
+  }
+
+  .overlay-container h2 {
+    font-size: 2vw;
+    max-font-size: 30px;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  .overlay-container p {
+    font-size: 1vw;
+    max-font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 2% 0;
+    
+  }
+}
 
 
   </style>
@@ -325,7 +500,7 @@
     <div class="overlay-container">
       <img src="/assets/logo-casa-2-20.png" alt="Overlay Image">
       <h2>Welcome to Casa Animalia Website</h2>
-      <p>Continue to Login to add your appointment</p>
+      <p>Continue Signin to add your appointment</p>
     </div>
 
     <div class="video-section">
@@ -345,7 +520,7 @@
    </button> 
       </div>
       <div class="signin">
-        <span>Login</span>
+        <span>Signin</span>
       </div>
     
       <form action="/login" method="POST">
