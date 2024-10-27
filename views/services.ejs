@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Casa Animalia Veterinary Clinic - Services</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> <!-- Link to the ICO file -->
   <link rel="stylesheet" href="/css/style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -12,11 +14,18 @@
   <div class="na-vi">
     <a href="/" class="home2">HOME</a>  
     <a href="/services" class="services4">SERVICES</a>
-    <a href="#contact" class="contact-us5">CONTACT US</a>
-    <a href="#reservation" class="reservation">RESERVATION</a>
+    <a href="/#contactus" class="contact-us5">CONTACT US</a>
+    <a href="/login" class="reservation">RESERVATION</a>
     <div class="button-container-custom">
-      <button class="btn login-btn-custom">Login</button>
-      <button class="btn signup-btn-custom">Signup</button>
+      <button class="btn login-btn-custom" onclick="location.href='/login';">
+        <i class="fas fa-dog"></i>
+        <span>Login</span>
+    </button>
+    
+    <button class="btn signup-btn-custom" onclick="location.href='/register';">
+        <i class="fas fa-cat"></i>
+        <span>Signup</span>
+    </button>
     </div>      
   </div>
   

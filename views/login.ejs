@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> <!-- Link to the ICO file -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -238,23 +239,24 @@
     }
 
     .overlay-container {
-    position: absolute;
-    top: 27%; /* Centers vertically based on viewport height */
-    left: 43.5%; /* Centers horizontally */
-    transform: translate(-86%, -20%); /* Ensures the container stays centered */
-    z-index: 16;
-    width: 25%; /* Percentage-based width for responsive scaling */
-    max-width: 400px; /* Adds a max-width to control excessive growth on large screens */
-    padding: 2%; /* Responsive padding */
-    background: rgba(202, 202, 202, 0.3);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ffffff;
-    text-align: center;
-    height: 60%;
+      position: absolute;
+      top: 27%; /* Centers vertically based on viewport height */
+      left: 76%; /* Centers horizontally */
+      transform: translate(-86%, -20%); /* Ensures the container stays centered */
+      z-index: 16;
+      width: 100%; /* Percentage-based width for responsive scaling */
+      max-width: 400px; /* Adds a max-width to control excessive growth on large screens */
+      padding: 2%; /* Responsive padding */
+      background: rgba(255, 255, 255, 0.041);
+      backdrop-filter: blur(3px);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #ffffff;
+      text-align: center;
+      height: 60%;
+      border: solid 1px;
   }
 
   .overlay-container img {
@@ -411,23 +413,24 @@ input:not(:placeholder-shown) + .floating-label {
     }
 
 .overlay-container {
-    position: absolute;
+  position: absolute;
     top: 27%; /* Centers vertically based on viewport height */
-    left: 45.3%; /* Centers horizontally */
+    left: 79%; /* Centers horizontally */
     transform: translate(-86%, -20%); /* Ensures the container stays centered */
     z-index: 16;
-    width: 20%; /* Percentage-based width for responsive scaling */
+    width: 75%; /* Percentage-based width for responsive scaling */
     max-width: 400px; /* Adds a max-width to control excessive growth on large screens */
     padding: 2%; /* Responsive padding */
-    background: rgba(202, 202, 202, 0.3);
-    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.041);
+    backdrop-filter: blur(3px);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #ffffff;
     text-align: center;
-    height: 60%;
+    height: 70%;
+    border: solid 1px;
   }
 
   .overlay-container img {
@@ -497,13 +500,12 @@ input:not(:placeholder-shown) + .floating-label {
 <body>
   <div class="container">
 
-    <div class="overlay-container">
-      <img src="/assets/logo-casa-2-20.png" alt="Overlay Image">
-      <h2>Welcome to Casa Animalia Website</h2>
-      <p>Continue Signin to add your appointment</p>
-    </div>
-
     <div class="video-section">
+      <div class="overlay-container">
+        <img src="/assets/logo-casa-2-20.png" alt="Overlay Image">
+        <h2>Welcome to Casa Animalia Website</h2>
+        <p>Signin to add your appointment</p>
+      </div>
       <video autoplay loop muted playsinline>
         <source src="/assets/loginstock.mp4" type="video/mp4">
         Your browser does not support the video tag.

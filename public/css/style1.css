@@ -11,8 +11,12 @@
 }
 
 .navigation {
-  position: absolute;
-  inset: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #8fd0b3; /* Background color for the navbar */
+  transition: top 0.3s ease; /* Smooth transition for show/hide effect */
+  z-index: 1000; /* Ensures it stays on top */
 }
 .rectangle-1 {
   background: #8fd0b3;
@@ -23,7 +27,7 @@
   top: calc(50% - 3402.5px);
 }
 .na-vi {
-  width: 609px;
+  width: 1px;
   height: 19px;
   position: static;
 }
@@ -124,16 +128,17 @@
   background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 15px 32px;
+  padding: 20px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.10s ease, box-shadow 0.10s ease, width 0.10s ease; /* Added width transition */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.288);
   font-family: "Inter-SemiBold", sans-serif;
-  font-size: 16px;
   font-weight: 600;
+  position: relative; /* Position relative for text sliding */
+  overflow: hidden; /* Hide overflow for sliding effect */
 }
 
 .login-btn-custom {
@@ -145,16 +150,29 @@
   border-style: solid; /* Added border style */
 }
 
-
 .signup-btn-custom {
   background-color: #e1b61b; /* Red */
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
+.btn span {
+  position: absolute; /* Position the text absolutely */
+  left: 50%; /* Center the text */
+  transform: translateX(-50%); /* Adjust for centering */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.6s, left 0.6s; /* Transition for text */
+}
+
+.btn i {
+  margin-right: 6px; /* Space between icon and text */
+}
+
 .btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.76);
+  background-color: #e1b61b; /* Change to a hover color */
+  width: 140px; /* Expand the button width on hover */
 }
 
 .login-btn-custom:hover {
@@ -168,6 +186,12 @@
   border-style: solid; /* Added border style */
 }
 
+/* Show the text when hovering over the button */
+.btn:hover span {
+  opacity: 1; /* Show text on hover */
+  left: 80%; /* Move text to the right */
+  margin-right: 2px;
+}
 
 .footer {
   position: absolute;
@@ -1981,8 +2005,9 @@ color: #818181;
   align-items: center;
   justify-content: center;
   background-color: #f9fafb00;
-  left: calc(50% - 652.07px);
-  top: calc(40% - 2760.08px);
+  left: calc(40% - 440.07px);
+  top: calc(50% - 3450.08px);
+  max-width: 30%;
 }
 .button-container {
   position: relative;
@@ -1996,9 +2021,10 @@ color: #818181;
   background-color: #e1b61b;
   border-radius: 10px;
   cursor: pointer;
-  position: relative;
+  position: relative; 
   box-sizing: border-box;
   height: 65px;
+  width: 400px;
 }
 .button-container:hover .dog {
   transform: translate(20px, -55px) rotate(15deg);
@@ -2284,77 +2310,410 @@ color: #818181;
   transition: 0.3s top cubic-bezier(0.33, 1, 0.68, 1);
 }
 
-/* Mobile View Styles */
-@media (max-width: 500px) and (min-width: 450px) {
-  .navigation {
-    position: absolute;
-    inset: 0;
+/* Hide mobile navigation by default */
+.mobile-nav {
+  display: none;
+}
+
+/* Base Mobile Styles */
+@media screen and (max-width: 768px) {
+  /* General Layout */
+  .desktop-1 {
+    height: auto;
+    padding: 0;
+  }
+
+  body {
+    padding-top: 60px;
+    overflow-x: hidden;
+  }
+
+  /* Navigation */
+  .na-vi {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #8fd0b3;
+    padding: 1rem;
+  }
+
+  /* Logo Section */
+  .logo {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-casa-2-2 {
+    width: 80px;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .casa-animalia-veterinary-clinic2 {
+    font-size: 24px;
+    position: relative;
+    left: 10px;
+    top: 0;
+    width: auto;
+    height: auto;
+  }
+
+  /* Hero Section */
+  .hero2 {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .easily-book-vet-appointments-for-your-pet-s-care {
+    font-size: 40px;
+    line-height: 1.2;
+    padding: 20px;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .untitled-design-19-1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 20px 0;
+  }
+
+  /* Services Section */
+  .services3 {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .casa-animalia-services {
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .services {
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  /* Team Section */
+  .team2 {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .meet-the-team {
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+
+  .image-4, .image-5, .image-7, .image-a, .image-b, .image-c {
+    width: 80%;
+    height: auto;
+    position: relative;
+    left: 0;
+    margin: 20px auto;
+    display: block;
+  }
+
+  /* Gallery Section */
+  .gallery2 {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .fur-ever-memories-from-casa-animalia {
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+
+  .image-8, .image-9, .image-10, .image-11, .image-12, .image-13, .image-14 {
+    width: 90%;
+    height: auto;
+    position: relative;
+    left: 0;
+    margin: 10px auto;
+  }
+
+  /* Contact Section */
+  .l-ocation {
+    width: 100%;
+    height: auto;
+  }
+
+  .visit-our-clinic {
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .image-15 {
+    width: 100%;
+    height: 300px;
+  }
+
+  .rectangle-18 {
+    width: 100%;
+    position: relative;
+    left: 0;
+    height: auto;
+    padding: 20px;
+  }
+
+  .contact-us3 {
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+
+  .rectangle-19, .rectangle-20, .rectangle-21, .rectangle-22 {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin: 10px 0;
+  }
+
+  /* Footer */
+  .rectangle-27 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .sitemap, .our-services, .get-in-touch {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 0;
+    margin: 20px 0;
+  }
+
+  /* Buttons */
+  .rectangle-8, .get-in-touch2, .submit {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin: 10px 0;
+  }
+
+  /* Dog Animation Container */
+  .container {
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin: 20px 0;
+  }
+
+  .button-container {
+    transform: scale(0.8);
+  }
+
+  /* Testimonials */
+  .testimonial2 {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .words-from-our-client {
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+
+  .feedback-1, .feedback-2, .feedback-3 {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    font-size: 24px;
+  }
+
+  /* Working Hours */
+  .working-hours {
+    text-align: center;
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+
+  .rectangle-4, .rectangle-5 {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin: 10px 0;
+  }
+
+  /* Contact Buttons */
+  .casaanimalia-yahoo-com2, .casa-animalia-veterinary-clinic {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin: 10px 0;
+  }
+
+  /* Hamburger Menu */
+  .hamburger {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: #8fd0b3; /* Same color as your rectangle */
-    padding: 10px; /* Add some padding */
-    z-index: 100; /* Ensure it's on top */
+    justify-content: space-between;
   }
 
-  .rectangle-1 {
-    height: auto; /* Allow height to adjust automatically */
-    position: relative;
-  }
-
-  .na-vi {
-    width: 100%; /* Full width for mobile */
-    height: auto; /* Allow height to adjust */
-  }
-
-  .home2,
-  .services4,
-  .contact-us5,
-  .reservation {
-    color: #ffffff;
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 18px; /* Slightly smaller font for mobile */
-    font-weight: 700;
-    margin: 10px 0; /* Add margin for spacing */
-    text-align: center; /* Center align for mobile */
-    width: 100%; /* Full width for mobile buttons */
-  }
-
-  .button-container-custom {
-    display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center; /* Center align buttons */
-    margin-top: 20px; /* Add space above */
-  }
-
-  .btn {
-    width: 90%; /* Full width buttons */
-    margin: 5px 0; /* Add spacing between buttons */
-    padding: 10px; /* Adjust padding for mobile */
-  }
-
-  /* Hamburger Menu Styles */
-  .hamburger {
+  .hamburger span {
     display: block;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #8fd0b3;
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+
+  .mobile-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .mobile-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .mobile-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .mobile-buttons button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 16px;
     cursor: pointer;
-    margin: 15px auto; /* Center the hamburger */
-    z-index: 101; /* On top of other elements */
+    transition: transform 0.3s ease;
   }
 
-  /* Initially hide the menu items */
-  .menu {
-    display: none; /* Hide menu initially */
+  .mobile-buttons button:first-child {
+    background-color: transparent;
+    border: 2px solid #e1b61b;
+    color: #ffffff;
   }
 
-  /* Show menu when hamburger is clicked */
-  .menu.active {
-    display: flex; /* Show menu as flexbox */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
+  .mobile-buttons button:last-child {
+    background-color: #e1b61b;
+    color: #ffffff;
+  }
+
+  .mobile-buttons button:hover {
+    transform: translateY(-2px);
   }
 }
 
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .easily-book-vet-appointments-for-your-pet-s-care {
+    font-size: 32px;
+  }
 
+  .casa-animalia-services,
+  .meet-the-team,
+  .fur-ever-memories-from-casa-animalia,
+  .visit-our-clinic,
+  .contact-us3 {
+    font-size: 28px;
+  }
+
+  .feedback-1, .feedback-2, .feedback-3 {
+    font-size: 20px;
+  }
+
+  .button-container {
+    transform: scale(0.7);
+  }
+}
 
 
 

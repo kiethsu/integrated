@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> <!-- Link to the ICO file -->
   <link rel="stylesheet" href="./vars.css">
   <link rel="stylesheet" href="/css/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
    a,
    button,
@@ -360,7 +362,7 @@
       <button class="casa-animalia-veterinary-clinic" onclick="window.open('https://www.facebook.com/p/Casa-Animalia-Cabanatuan-100057451239318/', '_blank');">
         <span style="margin-left: 60px;">Casa Animalia Veterinary Clinic</span>
       </button>      
-    <button class="rectangle-8" onclick="location.href='reservation.html'">BOOK A RESERVATION TODAY &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+    <button class="rectangle-8" onclick="location.href='/login'">BOOK A RESERVATION TODAY &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
     <img class="icon-chevron-right" src="./assets/icon-chevron-right0.svg" />
     <img class="icon-chevron-right2" src="./assets/icon-chevron-right1.svg" />
   </button>  
@@ -385,11 +387,19 @@
     <div class="na-vi">
       <a href="#home" class="home2">HOME</a>  
       <a href="/services" class="services4">SERVICES</a>
-      <a href="#contact" class="contact-us5">CONTACT US</a>
-      <a href="#reservation" class="reservation">RESERVATION</a>
+      <a href="#contactus" class="contact-us5">CONTACT US</a>
+      <a href="/login" class="reservation">RESERVATION</a>
       <div class="button-container-custom">
-        <button class="btn login-btn-custom" onclick="location.href='/login';">Login</button>
-        <button class="btn signup-btn-custom" onclick="location.href='/register';">Sgn up</button>
+        <button class="btn login-btn-custom" onclick="location.href='/login';">
+          <i class="fas fa-dog"></i>
+          <span>Login</span>
+      </button>
+      
+      <button class="btn signup-btn-custom" onclick="location.href='/register';">
+          <i class="fas fa-cat"></i>
+          <span>Signup</span>
+      </button>
+             
     </div>
     <div class="logo">
       <img class="logo-casa-2-2" src="./assets/logo-casa-2-20.png" />
@@ -432,7 +442,7 @@
             <div class="right"></div>
           </div>
         </div>
-        <button onclick="location.href='reservation.html'" id="aboutus">
+        <button onclick="location.href='/login'" id="aboutus">
           BOOK A RESERVATION
         </button>
         <div class="paw"></div>

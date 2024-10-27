@@ -1,1077 +1,1105 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #fffdf6;
-    font-family: "Inter", sans-serif;
-  }
-  
-  /* Navigation Bar */
-  .rectangle-1 {
-    background: #8fd0b3;
-    height: 135px;
-    position: absolute;
-    right: 0px;
-    left: 0px;
-    top: 0;
-  }
-  
-  .na-vi {
-    width: 609px;
-    height: 19px;
-    position: static;
-  }
-  
-  .home2 {
-    color: #ffffff;
-    text-align: right;
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    left: calc(50% - 280px);
-    top: 62px;
-    width: 76.27px;
-    height: 11.5px;
-    text-decoration: none;
-  }
-  
-  .services4 {
-    color: #ffffff;
-    text-align: right;
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    left: calc(50% - -23.92px);
-    top: 62px;
-    width: 119.03px;
-    height: 19px;
-    text-decoration: none;
-  }
-  
-  .contact-us5 {
-    color: #ffffff;
-    text-align: right;
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    left: calc(50% - -192.64px);
-    top: 62px;
-    width: 136.36px;
-    height: 7.5px;
-    text-decoration: none;
-  }
-  
-  .reservation {
-    color: #ffffff;
-    text-align: right;
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    left: calc(50% - 170.22px);
-    top: 62px;
-    width: 160.63px;
-    height: 15.5px;
-    text-decoration: none;
-  }
-  
-  /* Logo and Title */
-  .logo {
-    width: 288px;
-    height: 109px;
-    position: static;
-  }
-  
-  .logo-casa-2-2 {
-    width: 114px;
-    height: 109px;
-    position: absolute;
-    left: 309px;
-    top: 13px;
-    object-fit: cover;
-    left: calc(50% - 650.22px);
-  }
-  
-  .casa-animalia-veterinary-clinic2 {
-    color: #000000;
-    text-align: left;
-    position: absolute;
-    left: 423px;
-    top: 25px;
-    width: 174px;
-    height: 83px;
-    left: calc(50% - 530.22px);
-  }
-  
-  .casa-animalia-veterinary-clinic-2-span {
-    color: #ffffff;
-    font-family: "Outfit-SemiBold", sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-  }
-  
-  .casa-animalia-veterinary-clinic-2-span2 {
-    color: #ffffff;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .button-container-custom {
-    gap: -2px;
-    margin-top: 50px;
-    position: absolute;
-    left: calc(50% - -400px);
-    top: -5px;
-    z-index: 10; /* Ensures the button container is on top */
-  }
-  
-  .btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.288);
-    font-family: "Inter-SemiBold", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  
-  .login-btn-custom {
-    background-color: #2196F3; /* Blue */
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
-  
-  .signup-btn-custom {
-    background-color: #f44336; /* Red */
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-  }
-  
-  .btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.76);
-  }
-  
-  .login-btn-custom:hover {
-    background-color: #1976D2; /* Darker blue on hover */
-  }
-  
-  .signup-btn-custom:hover {
-    background-color: #d32f2f; /* Darker red on hover */
-  }
-  .group-2,
-  .group-2 * {
-    box-sizing: border-box;
-    margin-top: 30px;
-  }
-  .group-2 {
-    position: relative;
-  }
-  .footer {
-    width: 1922px;
-    height: 622px;
-    position: static;
-  }
-  .rectangle-27 {
-    background: #8fd0b3;
-    height: 622px;
-    position: absolute;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-  }
-  .logo-casa-2-3 {
-    width: 132.73px;
-    height: 127px;
-    position: absolute;
-    left: calc(50% - 651.3px);
-    top: calc(50% - -2459.5px);
-    object-fit: cover;
-  }
-  .monday-friday {
-    color: #ffffff;
-    text-align: center;
-    font-family: "Inter-SemiBold", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    position: absolute;
-    left: calc(50% - -190.35px);
-    top: calc(50% - -2667.5px);
-    width: 163.6px;
-    height: 22px;
-  }
-  ._9-00-am-10-00-pm {
-    color: #ffffff;
-    text-align: center;
-    font-family: "Inter-Medium", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - -470.21px);
-    top: calc(50% - -2667.5px);
-    width: 169.77px;
-    height: 22px;
-  }
-  .saturday-sunday {
-    color: #ffffff;
-    text-align: center;
-    font-family: "Inter-SemiBold", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    position: absolute;
-    left: calc(50% - -201.67px);
-    top: calc(50% - -2701.5px);
-    width: 154.34px;
-    height: 22px;
-  }
-  ._9-00-am-6-00-pm {
-    color: #ffffff;
-    text-align: center;
-    font-family: "Inter-Medium", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - -476.38px);
-    top: calc(50% - -2700.5px);
-    width: 167.71px;
-    height: 22px;
-  }
-  .casa-animalia-veterinary-clinic-is-your-trusted-partner-for-compassionate-and-personalized-pet-care-ensuring-the-health-and-happiness-of-your-pets-proudly-serving-in-cabanatuan-nueva-ecija {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Medium", sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - 673.93px);
-    top: calc(50% - -2589.5px);
-    width: 197.55px;
-    height: 94px;
-  }
-  .casaanimalia-com {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Medium", sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - 675.99px);
-    top: calc(50% - -2749.5px);
-    width: 185.2px;
-    height: 28px;
-  }
-  .sitemap {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    left: calc(50% - 376.58px);
-    top: calc(50% - -2457.5px);
-    width: 127.58px;
-    height: 28px;
-  }
-  .home, .about-us, .services12, .our-team, .clinic-gallery, .contact-us, .our-testimonials {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - 376.58px);
-    text-decoration: none;
-    transition: color 0.3s ease; /* Add transition for text color */
-  }
-  
-  .home::after, .about-us::after, .services12::after, .our-team::after, .clinic-gallery::after, .contact-us::after, .our-testimonials::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .home:hover::after, .about-us:hover::after, .services12:hover::after, .our-team:hover::after, .clinic-gallery:hover::after, .contact-us:hover::after, .our-testimonials:hover::after {
-    transform: scaleX(1);
-  }
-  
-  .home {
-    top: calc(50% - -2514.5px);
-    width: 44px;
-  }
-  
-  .about-us {
-    top: calc(50% - -2544.5px);
-    width: 67px;
-  }
-  
-  .services12 {
-    top: calc(50% - -2574.5px);
-    width: 65px;
-  }
-  
-  .our-team {
-    top: calc(50% - -2604.5px);
-    width: 70px;
-  }
-  
-  .clinic-gallery {
-    top: calc(50% - -2664.5px);
-    width: 95px;
-  }
-  
-  .contact-us {
-    top: calc(50% - -2694.5px);
-    width: 80px;
-  }
-  
-  .our-testimonials {
-    top: calc(50% - -2634.5px);
-    width: 120px;
-  }
-  .rectangle-28 {
-    border-radius: 0px;
-    width: 167.71px;
-    height: 38px;
-    position: absolute;
-    left: calc(50% - 674.96px);
-    top: calc(50% - -2805.5px);
-    overflow: visible;
-  }
-  .contact-us2 {
-    color: #000000;
-    text-align: center;
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    position: absolute;
-    left: calc(50% - 683.19px);
-    top: calc(50% - -2813.5px);
-    width: 184.17px;
-    height: 22px;
-    text-decoration: none;
-  }
-  .our-services {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    left: calc(50% - 101.86px);
-    top: calc(50% - -2459.5px);
-    width: 195.49px;
-    height: 28px;
-  }
-  .pet-grooming {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - 101.86px);
-    top: calc(50% - -2518.5px);
-    width: 149.19px;
-    height: 19px;
-  }
-  .health-check-ups {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - 101.86px);
-    top: calc(50% - -2548.5px);
-    width: 195.49px;
-    height: 19px;
-  }
-  .vaccination {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - 101.86px);
-    top: calc(50% - -2578.5px);
-    width: 131.7px;
-    height: 19px;
-  }
-  .consultation {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - 101.86px);
-    top: calc(50% - -2608.5px);
-    width: 131.7px;
-    height: 19px;
-  }
-  .desexation {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - 101.86px);
-    top: calc(50% - -2638.5px);
-    width: 179.03px;
-    height: 19px;
-  }
-  .get-in-touch {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    left: calc(50% - -200.64px);
-    top: calc(50% - -2458.5px);
-    width: 173.89px;
-    height: 28px;
-  }
-  ._63-9150811294 {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - -235.62px);
-    top: calc(50% - -2517.5px);
-    width: 300pxpx;
-    height: 19px;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdf6;
+  font-family: "Inter", sans-serif;
+}
+
+/* Navigation Bar */
+.rectangle-1 {
+  background: #8fd0b3;
+  height: 135px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0;
+}
+
+.na-vi {
+  width: 609px;
+  height: 19px;
+  position: static;
+}
+
+.home2 {
+  color: #ffffff;
+  text-align: right;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 280px);
+  top: 62px;
+  width: 76.27px;
+  height: 11.5px;
+  text-decoration: none;
+}
+
+.services4 {
+  color: #ffffff;
+  text-align: right;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - -23.92px);
+  top: 62px;
+  width: 119.03px;
+  height: 19px;
+  text-decoration: none;
+}
+
+.contact-us5 {
+  color: #ffffff;
+  text-align: right;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - -192.64px);
+  top: 62px;
+  width: 136.36px;
+  height: 7.5px;
+  text-decoration: none;
+}
+
+.reservation {
+  color: #ffffff;
+  text-align: right;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 170.22px);
+  top: 62px;
+  width: 160.63px;
+  height: 15.5px;
+  text-decoration: none;
+}
+
+/* Logo and Title */
+.logo {
+  width: 288px;
+  height: 109px;
+  position: static;
+}
+
+.logo-casa-2-2 {
+  width: 114px;
+  height: 109px;
+  position: absolute;
+  left: 309px;
+  top: 13px;
+  object-fit: cover;
+  left: calc(50% - 650.22px);
+}
+
+.casa-animalia-veterinary-clinic2 {
+  color: #000000;
+  text-align: left;
+  position: absolute;
+  left: 423px;
+  top: 25px;
+  width: 174px;
+  height: 83px;
+  left: calc(50% - 530.22px);
+}
+
+.casa-animalia-veterinary-clinic-2-span {
+  color: #ffffff;
+  font-family: "Outfit-SemiBold", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.casa-animalia-veterinary-clinic-2-span2 {
+  color: #ffffff;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.button-container-custom {
+  gap: -2px;
+  margin-top: 50px;
+  position: absolute;
+  left: calc(50% - -400px);
+  top: -7px;
+  z-index: 10; /* Ensures the button container is on top */
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.10s ease, box-shadow 0.10s ease, width 0.10s ease; /* Added width transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.288);
+  font-family: "Inter-SemiBold", sans-serif;
+  font-weight: 600;
+  position: relative; /* Position relative for text sliding */
+  overflow: hidden; /* Hide overflow for sliding effect */
+}
+
+.login-btn-custom {
+  background-color: #2195f300; /* Blue */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-color: #e1b61b;
+  border-width: 3px;
+  border-style: solid; /* Added border style */
+}
+
+.signup-btn-custom {
+  background-color: #e1b61b; /* Red */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn span {
+  position: absolute; /* Position the text absolutely */
+  left: 50%; /* Center the text */
+  transform: translateX(-50%); /* Adjust for centering */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.6s, left 0.6s; /* Transition for text */
+}
+
+.btn i {
+  margin-right: 6px; /* Space between icon and text */
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.76);
+  background-color: #e1b61b; /* Change to a hover color */
+  width: 140px; /* Expand the button width on hover */
+}
+
+.login-btn-custom:hover {
+  background-color: #e1b61b; /* Darker blue on hover */
+}
+
+.signup-btn-custom:hover {
+  background-color: #d32f2f00; /* Darker red on hover */
+  border-color: #e1b61b;
+  border-width: 3px;
+  border-style: solid; /* Added border style */
+}
+
+/* Show the text when hovering over the button */
+.btn:hover span {
+  opacity: 1; /* Show text on hover */
+  left: 80%; /* Move text to the right */
+  margin-right: 2px;
+}
+.group-2,
+.group-2 * {
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+.group-2 {
+  position: relative;
+}
+.footer {
+  width: 1922px;
+  height: 622px;
+  position: static;
+}
+.rectangle-27 {
+  background: #8fd0b3;
+  height: 622px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+.logo-casa-2-3 {
+  width: 132.73px;
+  height: 127px;
+  position: absolute;
+  left: calc(50% - 651.3px);
+  top: calc(50% - -2459.5px);
+  object-fit: cover;
+}
+.monday-friday {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  left: calc(50% - -190.35px);
+  top: calc(50% - -2667.5px);
+  width: 163.6px;
+  height: 22px;
+}
+._9-00-am-10-00-pm {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -470.21px);
+  top: calc(50% - -2667.5px);
+  width: 169.77px;
+  height: 22px;
+}
+.saturday-sunday {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  left: calc(50% - -201.67px);
+  top: calc(50% - -2701.5px);
+  width: 154.34px;
+  height: 22px;
+}
+._9-00-am-6-00-pm {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -476.38px);
+  top: calc(50% - -2700.5px);
+  width: 167.71px;
+  height: 22px;
+}
+.casa-animalia-veterinary-clinic-is-your-trusted-partner-for-compassionate-and-personalized-pet-care-ensuring-the-health-and-happiness-of-your-pets-proudly-serving-in-cabanatuan-nueva-ecija {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 673.93px);
+  top: calc(50% - -2589.5px);
+  width: 197.55px;
+  height: 94px;
+}
+.casaanimalia-com {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 675.99px);
+  top: calc(50% - -2749.5px);
+  width: 185.2px;
+  height: 28px;
+}
+.sitemap {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 376.58px);
+  top: calc(50% - -2457.5px);
+  width: 127.58px;
+  height: 28px;
+}
+.home, .about-us, .services12, .our-team, .clinic-gallery, .contact-us, .our-testimonials {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 376.58px);
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add transition for text color */
+}
+
+.home::after, .about-us::after, .services12::after, .our-team::after, .clinic-gallery::after, .contact-us::after, .our-testimonials::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.home:hover::after, .about-us:hover::after, .services12:hover::after, .our-team:hover::after, .clinic-gallery:hover::after, .contact-us:hover::after, .our-testimonials:hover::after {
+  transform: scaleX(1);
+}
+
+.home {
+  top: calc(50% - -2514.5px);
+  width: 44px;
+}
+
+.about-us {
+  top: calc(50% - -2544.5px);
+  width: 67px;
+}
+
+.services12 {
+  top: calc(50% - -2574.5px);
+  width: 65px;
+}
+
+.our-team {
+  top: calc(50% - -2604.5px);
+  width: 70px;
+}
+
+.clinic-gallery {
+  top: calc(50% - -2664.5px);
+  width: 95px;
+}
+
+.contact-us {
+  top: calc(50% - -2694.5px);
+  width: 80px;
+}
+
+.our-testimonials {
+  top: calc(50% - -2634.5px);
+  width: 120px;
+}
+.rectangle-28 {
+  border-radius: 0px;
+  width: 167.71px;
+  height: 38px;
+  position: absolute;
+  left: calc(50% - 674.96px);
+  top: calc(50% - -2805.5px);
+  overflow: visible;
+}
+.contact-us2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 683.19px);
+  top: calc(50% - -2813.5px);
+  width: 184.17px;
+  height: 22px;
+  text-decoration: none;
+}
+.our-services {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 101.86px);
+  top: calc(50% - -2459.5px);
+  width: 195.49px;
+  height: 28px;
+}
+.pet-grooming {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 101.86px);
+  top: calc(50% - -2518.5px);
+  width: 149.19px;
+  height: 19px;
+}
+.health-check-ups {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 101.86px);
+  top: calc(50% - -2548.5px);
+  width: 195.49px;
+  height: 19px;
+}
+.vaccination {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 101.86px);
+  top: calc(50% - -2578.5px);
+  width: 131.7px;
+  height: 19px;
+}
+.consultation {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 101.86px);
+  top: calc(50% - -2608.5px);
+  width: 131.7px;
+  height: 19px;
+}
+.desexation {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 101.86px);
+  top: calc(50% - -2638.5px);
+  width: 179.03px;
+  height: 19px;
+}
+.get-in-touch {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - -200.64px);
+  top: calc(50% - -2458.5px);
+  width: 173.89px;
+  height: 28px;
+}
+._63-9150811294 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -235.62px);
+  top: calc(50% - -2517.5px);
+  width: 300pxpx;
+  height: 19px;
+  text-decoration: none;
 
 }
 ._63-9150811294::after {
-    content: ''; /* Create a pseudo-element */
-    position: absolute;
-    left: 0; /* Start from the left */
-    bottom: 0; /* Position at the bottom of the text */
-    width: 100%; /* Full width of the text */
-    height: 2px; /* Height of the underline */
-    background-color: #ffffff; /* Color of the underline */
-    transform: scaleX(0); /* Start with scale 0 */
-    transition: transform 0.3s ease; /* Smooth transition */
-  }
-  
-  ._63-9150811294:hover::after {
-    transform: scaleX(1); /* Scale to full width on hover */
-  }
+  content: ''; /* Create a pseudo-element */
+  position: absolute;
+  left: 0; /* Start from the left */
+  bottom: 0; /* Position at the bottom of the text */
+  width: 100%; /* Full width of the text */
+  height: 2px; /* Height of the underline */
+  background-color: #ffffff; /* Color of the underline */
+  transform: scaleX(0); /* Start with scale 0 */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
 
-  .casaanimalia-yahoo-com {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - -235.62px);
-    top: calc(50% - -2547.5px);
-    width: 188px;
-    height: 19px;
-    text-decoration: none;
-  }
-  .casaanimalia-yahoo-com::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .casaanimalia-yahoo-com:hover::after {
-    transform: scaleX(1);
-  }
+._63-9150811294:hover::after {
+  transform: scaleX(1); /* Scale to full width on hover */
+}
 
-  .km-111-h-concepcion-cabanatuan-city-nueva-ecija {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - -235.62px);
-    top: calc(50% - -2577.5px);
-    width: 380px;
-    height: 19px;
-    text-decoration: none;
-  }
-  .km-111-h-concepcion-cabanatuan-city-nueva-ecija::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .km-111-h-concepcion-cabanatuan-city-nueva-ecija:hover::after {
-    transform: scaleX(1);
-  }
+.casaanimalia-yahoo-com {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -235.62px);
+  top: calc(50% - -2547.5px);
+  width: 188px;
+  height: 19px;
+  text-decoration: none;
+}
+.casaanimalia-yahoo-com::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
 
-  .casa-animalia-cabanatuan {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - -235.62px);
-    top: calc(50% - -2604.5px);
-    width: 200px;
-    height: 19px;
-    text-decoration: none;
-  }
+.casaanimalia-yahoo-com:hover::after {
+  transform: scaleX(1);
+}
 
-  .casa-animalia-cabanatuan::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .casa-animalia-cabanatuan:hover::after {
-    transform: scaleX(1);
-  }
+.km-111-h-concepcion-cabanatuan-city-nueva-ecija {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -235.62px);
+  top: calc(50% - -2577.5px);
+  width: 380px;
+  height: 19px;
+  text-decoration: none;
+}
+.km-111-h-concepcion-cabanatuan-city-nueva-ecija::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
 
-  .email-1572-svgrepo-com {
-    width: 21.61px;
-    height: 14px;
-    position: absolute;
-    left: calc(50% - -207.84px);
-    top: calc(50% - -2518.5px);
-    overflow: visible;
-  }
-  .page-1 {
-    height: auto;
-    position: absolute;
-    left: 0px;
-    top: 1.75px;
-    overflow: visible;
-  }
-  .phone-svgrepo-com {
-    width: 25.72px;
-    height: 18px;
-    position: absolute;
-    left: calc(50% - -203.72px);
-    top: calc(50% - -2519.5px);
-    overflow: visible;
-  }
-  .location-pin-svgrepo-com {
-    width: 20.58px;
-    height: 15px;
-    position: absolute;
-    left: calc(50% - -208.87px);
-    top: calc(50% - -2577.5px);
-    overflow: visible;
-  }
-  .facebook-svgrepo-com {
-    width: 27.78px;
-    height: 19px;
-    position: absolute;
-    left: calc(50% - -204.75px);
-    top: calc(50% - -2604.5px);
-    overflow: visible;
-  }
-  .rectangle-29 {
-    background: #004aad;
-    border-radius: 60px;
-    width: 84.37px;
-    height: 4px;
-    position: absolute;
-    left: calc(50% - 376.58px);
-    top: calc(50% - -2498.5px);
-  }
-  .rectangle-30 {
-    background: #004aad;
-    border-radius: 60px;
-    width: 84.37px;
-    height: 4px;
-    position: absolute;
-    left: calc(50% - 101.86px);
-    top: calc(50% - -2498.5px);
-  }
-  .rectangle-31 {
-    background: #004aad;
-    border-radius: 60px;
-    width: 85.4px;
-    height: 4px;
-    position: absolute;
-    left: calc(50% - -200.64px);
-    top: calc(50% - -2496.5px);
-  }
-  .untitled-design-18-1 {
-    width: 300px;
-    height: 340px;
-    position: absolute;
-    left: calc(50% - -320px);
-    top: calc(50% - -2680.5px);
-    object-fit: cover;
-  }
-  .group-1 {
-    width: 1412px;
-    height: 5032px;
-    position: static;
-  }
-  ._1-stservices {
-    width: 1412px;
-    height: 3363px;
-    position: static;
-  }
-  .services2 {
-    color: #5a796c;
-    text-align: left;
-    font-family: "Outfit-ExtraBold", sans-serif;
-    font-size: 48px;
-    font-weight: 800;
-    position: absolute;
-    left: calc(50% - 642px);
-    top: 0px;
-    width: 242px;
-    height: 67px;
-  }
-  .grooming {
-    color: #5a796c;
-    text-align: left;
-    font-family: "Outfit-Medium", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - -25px);
-    top: 110px;
-    width: 242px;
-    height: 67px;
-  }
-  .consultation2 {
-    color: #5a796c;
-    text-align: left;
-    font-family: "Outfit-Medium", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - 642px);
-    top: 650px;
-    width: 282px;
-    height: 67px;
-  }
-  .image-18 {
-    width: 642px;
-    height: 465px;
-    position: absolute;
-    left: calc(50% - 642px);
-    top: 110px;
-    object-fit: cover;
-  }
-  .image-19 {
-    width: 641px;
-    height: 464px;
-    position: absolute;
-    left: calc(50% - -29px);
-    top: 663px;
-    object-fit: cover;
-  }
-  .our-consultation-services-at-casa-animalia-provide-thorough-health-assessments-for-your-pets-whether-you-re-seeking-advice-on-preventive-care-nutrition-or-behavior-our-experienced-veterinarians-are-here-to-help-we-conduct-detailed-physical-exams-and-address-any-concerns-you-may-have-about-your-pet-s-well-being-from-diagnosing-illnesses-to-offering-guidance-on-pet-care-routines-our-team-is-dedicated-to-providing-the-best-possible-care-for-your-furry-family-members {
-    color: #6b6b6b;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - 636px);
-    top: 716px;
-    width: 636px;
-    height: 269px;
-  }
-  .deworming {
-    color: #5a796c;
-    text-align: left;
-    font-family: "Outfit-Medium", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - 656px);
-    top: 1768px;
-    width: 282px;
-    height: 67px;
-  }
-  .deworming-is-a-vital-part-of-your-pet-s-health-care-routine-our-deworming-services-help-protect-your-pets-from-internal-parasites-that-can-cause-serious-health-issues-we-perform-thorough-examinations-and-recommend-appropriate-deworming-treatments-based-on-your-pet-s-age-size-and-lifestyle-regular-deworming-not-only-ensures-your-pet-s-comfort-but-also-contributes-to-their-overall-health-and-well-being-trust-our-team-to-provide-safe-and-effective-deworming-solutions-to-keep-your-furry-friends-happy-and-healthy {
-    color: #6b6b6b;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - 650px);
-    top: 1834px;
-    width: 636px;
-    height: 307px;
-  }
-  .at-casa-animalia-our-grooming-services-ensure-that-your-pets-not-only-look-their-best-but-also-feel-great-we-offer-a-full-range-of-grooming-options-including-bathing-hair-trimming-nail-clipping-ear-cleaning-and-coat-brushing-our-professional-groomers-use-gentle-pet-friendly-products-ensuring-a-stress-free-experience-for-your-furry-companions-whether-it-s-a-routine-groom-or-a-special-pampering-session-we-tailor-our-services-to-meet-your-pet-s-specific-needs {
-    color: #6b6b6b;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - -29px);
-    top: 172px;
-    width: 716px;
-    height: 242px;
-  }
-  .vaccination2 {
-    color: #5a796c;
-    text-align: left;
-    font-family: "Outfit-Medium", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - -2px);
-    top: 1215px;
-    width: 264px;
-    height: 67px;
-  }
-  .we-prioritize-your-pet-s-health-through-our-comprehensive-vaccination-services-vaccinations-are-essential-for-protecting-your-pets-against-various-infectious-diseases-and-ensuring-their-long-term-well-being-our-veterinary-team-provides-customized-vaccination-plans-based-on-your-pet-s-age-lifestyle-and-health-history-we-offer-core-vaccinations-as-well-as-optional-vaccines-tailored-to-your-pet-s-needs-trust-us-to-keep-your-furry-companions-safe-and-healthy-with-our-expert-vaccination-services {
-    color: #6b6b6b;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - -6px);
-    top: 1277px;
-    width: 716px;
-    height: 282px;
-  }
-  .image-21 {
-    width: 646px;
-    height: 465px;
-    position: absolute;
-    left: calc(50% - 667px);
-    top: 1215px;
-    object-fit: cover;
-  }
-  .image-24 {
-    width: 646px;
-    height: 465px;
-    position: absolute;
-    left: calc(50% - 667px);
-    top: 1215px;
-    object-fit: cover;
-  }
-  .desexing {
-    color: #5a796c;
-    text-align: left;
-    font-family: "Outfit-Medium", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - -13px);
-    top: 2333px;
-    width: 264px;
-    height: 67px;
-  }
-  .desexing-is-an-important-procedure-for-pet-owners-looking-to-prevent-unwanted-litters-and-promote-the-health-and-well-being-of-their-pets-our-desexing-services-include-spaying-for-female-pets-and-neutering-for-male-pets-these-procedures-not-only-help-control-the-pet-population-but-also-reduce-the-risk-of-certain-health-issues-such-as-reproductive-cancers-and-behavioral-problems-our-skilled-veterinary-team-ensures-that-each-procedure-is-performed-safely-and-with-the-utmost-care-providing-post-operative-support-to-ensure-a-smooth-recovery-for-your-furry-companions {
-    color: #6b6b6b;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - -17px);
-    top: 2395px;
-    width: 716px;
-    height: 290px;
-  }
-  .image-23 {
-    width: 641px;
-    height: 464px;
-    position: absolute;
-    left: calc(50% - -15px);
-    top: 1781px;
-    object-fit: cover;
-  }
-  .surgery {
-    color: #5a796c;
-    text-align: left;
-    font-family: "Outfit-Medium", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - 643px);
-    top: 2886px;
-    width: 173px;
-    height: 67px;
-  }
-  .our-surgical-services-are-designed-to-provide-the-highest-standard-of-care-for-your-pets-whether-it-s-a-routine-procedure-or-an-emergency-surgery-our-experienced-veterinary-team-is-equipped-with-the-latest-technology-and-techniques-to-ensure-your-pet-s-safety-and-comfort-we-perform-a-wide-range-of-surgeries-including-spays-neuters-tumor-removals-and-orthopedic-procedures-before-any-surgery-we-conduct-thorough-evaluations-to-develop-a-personalized-treatment-plan-post-operative-care-and-follow-up-are-also-prioritized-to-ensure-a-smooth-recovery-process-for-your-beloved-companions {
-    color: #6b6b6b;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - 637px);
-    top: 2952px;
-    width: 636px;
-    height: 366px;
-  }
-  .image-27 {
-    width: 640px;
-    height: 465px;
-    position: absolute;
-    left: calc(50% - 650px);
-    top: 2333px;
-    object-fit: cover;
-  }
-  .image-29 {
-    width: 641px;
-    height: 464px;
-    position: absolute;
-    left: calc(50% - -28px);
-    top: 2899px;
-    object-fit: cover;
-  }
-  ._2-ndservices {
-    width: 1383px;
-    height: 1581px;
-    position: static;
-  }
-  .x-ray {
-    color: #5a796c;
-    text-align: left;
-    font-family: "Outfit-Medium", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - -13px);
-    top: 3451px;
-    width: 153px;
-    height: 67px;
-  }
-  .our-state-of-the-art-x-ray-services-provide-essential-insights-into-your-pet-s-health-x-rays-are-a-non-invasive-diagnostic-tool-that-helps-us-visualize-bones-organs-and-other-internal-structures-allowing-for-accurate-diagnosis-of-various-conditions-whether-it-s-detecting-fractures-assessing-joint-health-or-identifying-potential-tumors-our-skilled-veterinary-team-is-trained-to-interpret-x-ray-images-to-guide-treatment-plans-we-prioritize-your-pet-s-comfort-throughout-the-process-and-ensure-that-any-necessary-follow-up-care-is-provided-for-optimal-health-outcomes {
-    color: #6b6b6b;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - -17px);
-    top: 3513px;
-    width: 716px;
-    height: 290px;
-  }
-  .infrared-light-theraphy {
-    color: #5a796c;
-    text-align: left;
-    font-family: "Outfit-Medium", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - 643px);
-    top: 4004px;
-    width: 508px;
-    height: 67px;
-  }
-  .nfrared-light-therapy-is-a-revolutionary-treatment-that-promotes-healing-and-alleviates-pain-in-pets-this-non-invasive-therapy-uses-specific-wavelengths-of-light-to-penetrate-deep-into-tissues-enhancing-circulation-and-accelerating-the-body-s-natural-healing-processes-it-s-particularly-beneficial-for-pets-recovering-from-surgery-managing-chronic-pain-or-dealing-with-arthritis-and-other-musculoskeletal-issues-our-trained-staff-utilizes-this-advanced-therapy-to-provide-a-comfortable-and-relaxing-experience-for-your-furry-friends-helping-them-return-to-their-active-lifestyles-more-quickly {
-    color: #6b6b6b;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - 637px);
-    top: 4070px;
-    width: 636px;
-    height: 335px;
-  }
-  .image-31 {
-    width: 640px;
-    height: 465px;
-    position: absolute;
-    left: calc(50% - 650px);
-    top: 3451px;
-    object-fit: cover;
-  }
-  .chemotherapy {
-    color: #5a796c;
-    text-align: left;
-    font-family: "Outfit-Medium", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    position: absolute;
-    left: calc(50% - -13px);
-    top: 4567px;
-    width: 361px;
-    height: 67px;
-  }
-  .our-chemotherapy-services-provide-a-compassionate-and-effective-approach-to-treating-cancer-in-pets-our-experienced-veterinary-team-is-dedicated-to-creating-personalized-treatment-plans-tailored-to-each-pet-s-specific-needs-we-utilize-advanced-protocols-and-the-latest-medications-to-target-cancer-cells-while-minimizing-side-effects-throughout-the-treatment-process-we-closely-monitor-your-pet-s-health-and-comfort-providing-supportive-care-to-enhance-their-quality-of-life-our-goal-is-to-help-your-furry-companions-fight-cancer-with-the-best-possible-outcomes-offering-hope-and-healing-during-a-challenging-time {
-    color: #6b6b6b;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - -17px);
-    top: 4629px;
-    width: 716px;
-    height: 319px;
-  }
-  .image-33 {
-    width: 638px;
-    height: 462px;
-    position: absolute;
-    left: calc(50% - -28px);
-    top: 4017px;
-    object-fit: cover;
-  }
-  .image-35 {
-    width: 640px;
-    height: 461px;
-    position: absolute;
-    left: calc(50% - 650px);
-    top: 4571px;
-    object-fit: cover;
-  }
-  .lowerbanner {
-    width: 1922px;
-    height: 389.37px;
-    position: static;
-  }
-  .rectangle-25 {
-    background: #004aad;
-    width: 70.04%;
-    height: 5.01%;
-    position: absolute;
-    right: 29.96%;
-    left: 0%;
-    bottom: 10.32%;
-    top: 84.67%;
-  }
-  .book-your-first-consultation-with-us-today-we-d-love-to-get-to-know-you-and-your-four-legged-family-member-whatever-your-pet-s-needs-may-be-count-on-us-to-deliver-the-top-care-options {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Inter-Medium", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    position: absolute;
-    right: 34.3%;
-    left: 2.62%;
-    width: 63.08%;
-    bottom: 12.12%;
-    top: 86.32%;
-    height: 1.56%;
-  }
-  .book-a-reservation-today {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Outfit-ExtraBold", sans-serif;
-    font-size: 40px;
-    font-weight: 800;
-    position: absolute;
-    right: 45.03%;
-    left: 1.96%;
-    width: 53.01%;
-    bottom: 12.24%;
-    top: 85%;
-    height: 1.01%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }  
-  .rectangle-26 {
-    border-radius: 0px;
-    width: 14.18%;
-    height: 54px;
-    position: absolute;
-    right: 83.2%;
-    left: 2.62%;
-    bottom: 655px;
-    overflow: visible;
-  }
-  .get-in-touch2 {
-    align-content: center;
-    text-align: center;
-    border-radius: 10px;
-    background: #e1b61b;
-    color: #ffffff;
-    text-align: center;
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    right: 82.88%;
-    right: 83.74%;
-    left: 1.99%;
-    bottom: 655px;
-    width: 12%;
-    height: 54px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
-  }
-  
-  .get-in-touch2:hover {
-    transform: translateY(-5px); /* Move button up on hover */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-  }
-  .untitled-design-14-1 {
-    width: 164.72px;
-    height: 142px;
-    position: absolute;
-    left: 60%;
-    top: calc(50% - -2280.5px);
-    transform: translateX(-50%);
-    object-fit: cover;
-  }
-  
-  .untitled-design-15-1 {
-    width: 151px;
-    height: 228.76px;
-    position: absolute;
-    left: 50%;
-    top: calc(50% - -2270.5px);
-    transform-origin: 0 0;
-    transform: translateX(-50%) rotate(4.817deg) scale(1.003, 0.997);
-    object-fit: cover;
-  }
-  
-  .image-17 {
-    width: 34.31%;
-    height: 5.01%;
-    position: absolute;
-    right: 0%;
-    left: 65.69%;
-    bottom: 10.3%;
-    top: 84.69%;
-    object-fit: cover;
-  }
-  
+.km-111-h-concepcion-cabanatuan-city-nueva-ecija:hover::after {
+  transform: scaleX(1);
+}
+
+.casa-animalia-cabanatuan {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -235.62px);
+  top: calc(50% - -2604.5px);
+  width: 200px;
+  height: 19px;
+  text-decoration: none;
+}
+
+.casa-animalia-cabanatuan::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.casa-animalia-cabanatuan:hover::after {
+  transform: scaleX(1);
+}
+
+.email-1572-svgrepo-com {
+  width: 21.61px;
+  height: 14px;
+  position: absolute;
+  left: calc(50% - -207.84px);
+  top: calc(50% - -2518.5px);
+  overflow: visible;
+}
+.page-1 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 1.75px;
+  overflow: visible;
+}
+.phone-svgrepo-com {
+  width: 25.72px;
+  height: 18px;
+  position: absolute;
+  left: calc(50% - -203.72px);
+  top: calc(50% - -2519.5px);
+  overflow: visible;
+}
+.location-pin-svgrepo-com {
+  width: 20.58px;
+  height: 15px;
+  position: absolute;
+  left: calc(50% - -208.87px);
+  top: calc(50% - -2577.5px);
+  overflow: visible;
+}
+.facebook-svgrepo-com {
+  width: 27.78px;
+  height: 19px;
+  position: absolute;
+  left: calc(50% - -204.75px);
+  top: calc(50% - -2604.5px);
+  overflow: visible;
+}
+.rectangle-29 {
+  background: #004aad;
+  border-radius: 60px;
+  width: 84.37px;
+  height: 4px;
+  position: absolute;
+  left: calc(50% - 376.58px);
+  top: calc(50% - -2498.5px);
+}
+.rectangle-30 {
+  background: #004aad;
+  border-radius: 60px;
+  width: 84.37px;
+  height: 4px;
+  position: absolute;
+  left: calc(50% - 101.86px);
+  top: calc(50% - -2498.5px);
+}
+.rectangle-31 {
+  background: #004aad;
+  border-radius: 60px;
+  width: 85.4px;
+  height: 4px;
+  position: absolute;
+  left: calc(50% - -200.64px);
+  top: calc(50% - -2496.5px);
+}
+.untitled-design-18-1 {
+  width: 300px;
+  height: 340px;
+  position: absolute;
+  left: calc(50% - -320px);
+  top: calc(50% - -2680.5px);
+  object-fit: cover;
+}
+.group-1 {
+  width: 1412px;
+  height: 5032px;
+  position: static;
+}
+._1-stservices {
+  width: 1412px;
+  height: 3363px;
+  position: static;
+}
+.services2 {
+  color: #5a796c;
+  text-align: left;
+  font-family: "Outfit-ExtraBold", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  position: absolute;
+  left: calc(50% - 642px);
+  top: 0px;
+  width: 242px;
+  height: 67px;
+}
+.grooming {
+  color: #5a796c;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -25px);
+  top: 110px;
+  width: 242px;
+  height: 67px;
+}
+.consultation2 {
+  color: #5a796c;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 642px);
+  top: 650px;
+  width: 282px;
+  height: 67px;
+}
+.image-18 {
+  width: 642px;
+  height: 465px;
+  position: absolute;
+  left: calc(50% - 642px);
+  top: 110px;
+  object-fit: cover;
+}
+.image-19 {
+  width: 641px;
+  height: 464px;
+  position: absolute;
+  left: calc(50% - -29px);
+  top: 663px;
+  object-fit: cover;
+}
+.our-consultation-services-at-casa-animalia-provide-thorough-health-assessments-for-your-pets-whether-you-re-seeking-advice-on-preventive-care-nutrition-or-behavior-our-experienced-veterinarians-are-here-to-help-we-conduct-detailed-physical-exams-and-address-any-concerns-you-may-have-about-your-pet-s-well-being-from-diagnosing-illnesses-to-offering-guidance-on-pet-care-routines-our-team-is-dedicated-to-providing-the-best-possible-care-for-your-furry-family-members {
+  color: #6b6b6b;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 636px);
+  top: 716px;
+  width: 636px;
+  height: 269px;
+}
+.deworming {
+  color: #5a796c;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 656px);
+  top: 1768px;
+  width: 282px;
+  height: 67px;
+}
+.deworming-is-a-vital-part-of-your-pet-s-health-care-routine-our-deworming-services-help-protect-your-pets-from-internal-parasites-that-can-cause-serious-health-issues-we-perform-thorough-examinations-and-recommend-appropriate-deworming-treatments-based-on-your-pet-s-age-size-and-lifestyle-regular-deworming-not-only-ensures-your-pet-s-comfort-but-also-contributes-to-their-overall-health-and-well-being-trust-our-team-to-provide-safe-and-effective-deworming-solutions-to-keep-your-furry-friends-happy-and-healthy {
+  color: #6b6b6b;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 650px);
+  top: 1834px;
+  width: 636px;
+  height: 307px;
+}
+.at-casa-animalia-our-grooming-services-ensure-that-your-pets-not-only-look-their-best-but-also-feel-great-we-offer-a-full-range-of-grooming-options-including-bathing-hair-trimming-nail-clipping-ear-cleaning-and-coat-brushing-our-professional-groomers-use-gentle-pet-friendly-products-ensuring-a-stress-free-experience-for-your-furry-companions-whether-it-s-a-routine-groom-or-a-special-pampering-session-we-tailor-our-services-to-meet-your-pet-s-specific-needs {
+  color: #6b6b6b;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -29px);
+  top: 172px;
+  width: 716px;
+  height: 242px;
+}
+.vaccination2 {
+  color: #5a796c;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -2px);
+  top: 1215px;
+  width: 264px;
+  height: 67px;
+}
+.we-prioritize-your-pet-s-health-through-our-comprehensive-vaccination-services-vaccinations-are-essential-for-protecting-your-pets-against-various-infectious-diseases-and-ensuring-their-long-term-well-being-our-veterinary-team-provides-customized-vaccination-plans-based-on-your-pet-s-age-lifestyle-and-health-history-we-offer-core-vaccinations-as-well-as-optional-vaccines-tailored-to-your-pet-s-needs-trust-us-to-keep-your-furry-companions-safe-and-healthy-with-our-expert-vaccination-services {
+  color: #6b6b6b;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -6px);
+  top: 1277px;
+  width: 716px;
+  height: 282px;
+}
+.image-21 {
+  width: 646px;
+  height: 465px;
+  position: absolute;
+  left: calc(50% - 667px);
+  top: 1215px;
+  object-fit: cover;
+}
+.image-24 {
+  width: 646px;
+  height: 465px;
+  position: absolute;
+  left: calc(50% - 667px);
+  top: 1215px;
+  object-fit: cover;
+}
+.desexing {
+  color: #5a796c;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -13px);
+  top: 2333px;
+  width: 264px;
+  height: 67px;
+}
+.desexing-is-an-important-procedure-for-pet-owners-looking-to-prevent-unwanted-litters-and-promote-the-health-and-well-being-of-their-pets-our-desexing-services-include-spaying-for-female-pets-and-neutering-for-male-pets-these-procedures-not-only-help-control-the-pet-population-but-also-reduce-the-risk-of-certain-health-issues-such-as-reproductive-cancers-and-behavioral-problems-our-skilled-veterinary-team-ensures-that-each-procedure-is-performed-safely-and-with-the-utmost-care-providing-post-operative-support-to-ensure-a-smooth-recovery-for-your-furry-companions {
+  color: #6b6b6b;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -17px);
+  top: 2395px;
+  width: 716px;
+  height: 290px;
+}
+.image-23 {
+  width: 641px;
+  height: 464px;
+  position: absolute;
+  left: calc(50% - -15px);
+  top: 1781px;
+  object-fit: cover;
+}
+.surgery {
+  color: #5a796c;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 643px);
+  top: 2886px;
+  width: 173px;
+  height: 67px;
+}
+.our-surgical-services-are-designed-to-provide-the-highest-standard-of-care-for-your-pets-whether-it-s-a-routine-procedure-or-an-emergency-surgery-our-experienced-veterinary-team-is-equipped-with-the-latest-technology-and-techniques-to-ensure-your-pet-s-safety-and-comfort-we-perform-a-wide-range-of-surgeries-including-spays-neuters-tumor-removals-and-orthopedic-procedures-before-any-surgery-we-conduct-thorough-evaluations-to-develop-a-personalized-treatment-plan-post-operative-care-and-follow-up-are-also-prioritized-to-ensure-a-smooth-recovery-process-for-your-beloved-companions {
+  color: #6b6b6b;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 637px);
+  top: 2952px;
+  width: 636px;
+  height: 366px;
+}
+.image-27 {
+  width: 640px;
+  height: 465px;
+  position: absolute;
+  left: calc(50% - 650px);
+  top: 2333px;
+  object-fit: cover;
+}
+.image-29 {
+  width: 641px;
+  height: 464px;
+  position: absolute;
+  left: calc(50% - -28px);
+  top: 2899px;
+  object-fit: cover;
+}
+._2-ndservices {
+  width: 1383px;
+  height: 1581px;
+  position: static;
+}
+.x-ray {
+  color: #5a796c;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -13px);
+  top: 3451px;
+  width: 153px;
+  height: 67px;
+}
+.our-state-of-the-art-x-ray-services-provide-essential-insights-into-your-pet-s-health-x-rays-are-a-non-invasive-diagnostic-tool-that-helps-us-visualize-bones-organs-and-other-internal-structures-allowing-for-accurate-diagnosis-of-various-conditions-whether-it-s-detecting-fractures-assessing-joint-health-or-identifying-potential-tumors-our-skilled-veterinary-team-is-trained-to-interpret-x-ray-images-to-guide-treatment-plans-we-prioritize-your-pet-s-comfort-throughout-the-process-and-ensure-that-any-necessary-follow-up-care-is-provided-for-optimal-health-outcomes {
+  color: #6b6b6b;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -17px);
+  top: 3513px;
+  width: 716px;
+  height: 290px;
+}
+.infrared-light-theraphy {
+  color: #5a796c;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 643px);
+  top: 4004px;
+  width: 508px;
+  height: 67px;
+}
+.nfrared-light-therapy-is-a-revolutionary-treatment-that-promotes-healing-and-alleviates-pain-in-pets-this-non-invasive-therapy-uses-specific-wavelengths-of-light-to-penetrate-deep-into-tissues-enhancing-circulation-and-accelerating-the-body-s-natural-healing-processes-it-s-particularly-beneficial-for-pets-recovering-from-surgery-managing-chronic-pain-or-dealing-with-arthritis-and-other-musculoskeletal-issues-our-trained-staff-utilizes-this-advanced-therapy-to-provide-a-comfortable-and-relaxing-experience-for-your-furry-friends-helping-them-return-to-their-active-lifestyles-more-quickly {
+  color: #6b6b6b;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 637px);
+  top: 4070px;
+  width: 636px;
+  height: 335px;
+}
+.image-31 {
+  width: 640px;
+  height: 465px;
+  position: absolute;
+  left: calc(50% - 650px);
+  top: 3451px;
+  object-fit: cover;
+}
+.chemotherapy {
+  color: #5a796c;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -13px);
+  top: 4567px;
+  width: 361px;
+  height: 67px;
+}
+.our-chemotherapy-services-provide-a-compassionate-and-effective-approach-to-treating-cancer-in-pets-our-experienced-veterinary-team-is-dedicated-to-creating-personalized-treatment-plans-tailored-to-each-pet-s-specific-needs-we-utilize-advanced-protocols-and-the-latest-medications-to-target-cancer-cells-while-minimizing-side-effects-throughout-the-treatment-process-we-closely-monitor-your-pet-s-health-and-comfort-providing-supportive-care-to-enhance-their-quality-of-life-our-goal-is-to-help-your-furry-companions-fight-cancer-with-the-best-possible-outcomes-offering-hope-and-healing-during-a-challenging-time {
+  color: #6b6b6b;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -17px);
+  top: 4629px;
+  width: 716px;
+  height: 319px;
+}
+.image-33 {
+  width: 638px;
+  height: 462px;
+  position: absolute;
+  left: calc(50% - -28px);
+  top: 4017px;
+  object-fit: cover;
+}
+.image-35 {
+  width: 640px;
+  height: 461px;
+  position: absolute;
+  left: calc(50% - 650px);
+  top: 4571px;
+  object-fit: cover;
+}
+.lowerbanner {
+  width: 1922px;
+  height: 389.37px;
+  position: static;
+}
+.rectangle-25 {
+  background: #004aad;
+  width: 70.04%;
+  height: 5.01%;
+  position: absolute;
+  right: 29.96%;
+  left: 0%;
+  bottom: 10.32%;
+  top: 84.67%;
+}
+.book-your-first-consultation-with-us-today-we-d-love-to-get-to-know-you-and-your-four-legged-family-member-whatever-your-pet-s-needs-may-be-count-on-us-to-deliver-the-top-care-options {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  right: 34.3%;
+  left: 2.62%;
+  width: 63.08%;
+  bottom: 12.12%;
+  top: 86.32%;
+  height: 1.56%;
+}
+.book-a-reservation-today {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Outfit-ExtraBold", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  position: absolute;
+  right: 45.03%;
+  left: 1.96%;
+  width: 53.01%;
+  bottom: 12.24%;
+  top: 85%;
+  height: 1.01%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}  
+.rectangle-26 {
+  border-radius: 0px;
+  width: 14.18%;
+  height: 54px;
+  position: absolute;
+  right: 83.2%;
+  left: 2.62%;
+  bottom: 655px;
+  overflow: visible;
+}
+.get-in-touch2 {
+  align-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background: #e1b61b;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  right: 82.88%;
+  right: 83.74%;
+  left: 1.99%;
+  bottom: 655px;
+  width: 12%;
+  height: 54px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.get-in-touch2:hover {
+  transform: translateY(-5px); /* Move button up on hover */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+.untitled-design-14-1 {
+  width: 164.72px;
+  height: 142px;
+  position: absolute;
+  left: 60%;
+  top: calc(50% - -2280.5px);
+  transform: translateX(-50%);
+  object-fit: cover;
+}
+
+.untitled-design-15-1 {
+  width: 151px;
+  height: 228.76px;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - -2270.5px);
+  transform-origin: 0 0;
+  transform: translateX(-50%) rotate(4.817deg) scale(1.003, 0.997);
+  object-fit: cover;
+}
+
+.image-17 {
+  width: 34.31%;
+  height: 5.01%;
+  position: absolute;
+  right: 0%;
+  left: 65.69%;
+  bottom: 10.3%;
+  top: 84.69%;
+  object-fit: cover;
+}
+
