@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Register</title>
+  <style>
+        .bottom-link {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px; /* Font size */
+      font-family: 'Fira sans', sans-serif; /* Font family */
+    }
+
+    .bottom-link a {
+      text-decoration: none;
+      color: blue;
+      font-size: 14px; /* Font size */
+      font-weight: 500;
+      font-family: 'Fira sans', sans-serif; /* Font family */
+    }
+
+    .bottom-link a:hover {
+      text-decoration: underline;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-color: #8fd0b3a8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      height: 80%;
+      max-width: 1200px;
+      max-height: 800px;
+      padding: 20px;
+      background-color: #4e000000;
+    }
+
+    .signin span {
+      color: #000000;
+      font-family: 'Fira sans', sans-serif;  
+      font-size: 70px;
+      font-weight: 800;
+      text-align: left;
+      display: block;
+      padding-top: 60px;
+      padding-bottom: 10px;
+    }
+
+    .form-section {
+        width: 45%;
+        height: 80vh;
+        padding-left: 90px;
+        padding-right: 80px;
+        background-color: #fffdf6;
+        box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .video-section {
+      width: 65%;
+      height: 82vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .video-section video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.5);
+      z-index: 15;
+      border-radius: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .input-container {
+        position: relative;
+        margin-bottom: 30px;
+        border: 2px solid transparent; /* Make border transparent initially */
+        border-radius: 5px; /* Rounded corners for the input container */
+        transition: border-color 0.3s; /* Smooth transition for border color */
+    }
+
+    .floating-label {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        font-size: 18px;
+        color: #999;
+        transition: 0.2s ease all;
+    }
+
+    input {
+        padding: 14px;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        border-width: .5px;
+    }
+
+    input:focus + .floating-label,
+    input:not(:placeholder-shown) + .floating-label {
+        top: -25px;
+        left: -14px;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    button {
+        padding: 20px;
+        border: none;
+        background-color: #004aad; /* Initial background color */
+        color: white; /* Text color */
+        font-size: 18px; /* Font size */
+        font-weight: 500;
+        font-family: 'Fira sans', sans-serif; /* Font family */
+        border-radius: 10px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    }
+
+    button:hover {
+        background-color: #004aad; /* Change background on hover */
+        transform: translateY(-4px); /* Lift the button slightly */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    }
+
+    .view-password {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+
+    .view-password span {
+        margin-left: 5px;
+        font-size: 14px;
+        color: #004aad; /* Icon color */
+    }
+  </style>
+
+  <!-- Add JavaScript for success message -->
+  <script>
+    // Show success message if registration is successful and then redirect to login
+    <% if (typeof success !== 'undefined' && success === true) { %>
+      alert("Successfully Registered!");
+      window.location.href = "/login";  // Redirect to login after success
+    <% } %>
+
+    // Toggle password visibility
+    function togglePassword() {
+      const passwordField = document.getElementById("password");
+      const toggleText = document.getElementById("toggleText");
+      const icon = document.getElementById("passwordIcon");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleText.textContent = "Hide Password";
+      } else {
+        passwordField.type = "password";
+        toggleText.textContent = "View Password";
+      }
+    }
+  </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Right Form Section -->
+        <div class="form-section">
+            <!-- Back to Login link -->
+            <div class="signin">
+              <span>Login</span>
+            </div>
+            <!-- Form to submit registration details -->
+            <form action="/register" method="POST">
+                <div class="input-container">
+                    <input type="text" id="fullName" name="fullName" required value="<%= typeof fullName !== 'undefined' ? fullName : '' %>" required placeholder=" ">
+                    <label for="fullName" class="floating-label">Full Name</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="email" id="email" name="email" class="<%= typeof error !== 'undefined' ? 'input-error' : '' %>" placeholder="<%= typeof error !== 'undefined' ? 'Email already exists' : '' %>" value="<%= typeof email !== 'undefined' && typeof error === 'undefined' ? email : '' %>" required>
+                    <label for="email" class="floating-label">Email</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="text" id="contactNumber" name="contactNumber" required value="<%= typeof contactNumber !== 'undefined' ? contactNumber : '' %>" required placeholder=" ">
+                    <label for="contactNumber" class="floating-label">Contact Number</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="text" id="address" name="address" required value="<%= typeof address !== 'undefined' ? address : '' %>" required placeholder=" ">
+                    <label for="address" class="floating-label">Address</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="password" id="password" name="password" required required placeholder=" ">
+                    <label for="password" class="floating-label">Password</label>
+                </div>
+
+                <!-- View Password Icon -->
+                <div class="view-password" onclick="togglePassword()">
+                  <i class="fa fa-eye" id="passwordIcon"></i>
+                  <span id="toggleText">View Password</span>
+                </div>
+
+                <button type="submit">REGISTER</button>
+            </form>
+            <div class="bottom-link">
+              Already have account? <a href="/login">LOGIN HERE</a>
+            </div>
+        </div>
+
+        <div class="video-section">
+          <video autoplay loop muted playsinline>
+            <source src="/assets/loginstock.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+    </div>
+</body>
+</html>
