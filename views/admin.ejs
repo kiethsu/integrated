@@ -3,471 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>Register</title>
+  <title>Admin Dashboard - Reservation List</title>
   <style>
-        .bottom-link {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 14px; /* Font size */
-      font-family: 'Fira sans', sans-serif; /* Font family */
-    }
-
-    .bottom-link a {
-      text-decoration: none;
-      color: blue;
-      font-size: 14px; /* Font size */
-      font-weight: 500;
-      font-family: 'Fira sans', sans-serif; /* Font family */
-    }
-
-    .bottom-link a:hover {
-      text-decoration: underline;
-    }
     body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        background-color: #8fd0b3a8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100vh;
+      background-color: #f5f5f5;
     }
+
     .container {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 80%;
-      height: 80%;
-      max-width: 1200px;
-      max-height: 800px;
-      padding: 20px;
-      background-color: #4e000000;
-    }
-
-    .signin span {
-      color: #000000;
-      font-family: 'Fira sans', sans-serif;  
-      font-size: 70px;
-      font-weight: 800;
-      text-align: left;
-      display: block;
-      padding-top: 60px;
-      padding-bottom: 10px;
-    }
-
-    .form-section {
-        width: 45%;
-        height: 80vh;
-        padding-left: 90px;
-        padding-right: 80px;
-        background-color: #fffdf6;
-        box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.3);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        border-radius: 20px 0px 0px 20px;
-    }
-
-    .video-section {
-      width: 65%;
-      height: 82vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-
-    .video-section video {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.5);
-      z-index: 15;
-      border-radius: 10px;
+      height: 100vh;
     }
 
-    form {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 20px;
+    /* Sidebar */
+    .sidebar {
+      width: 25%;
+      background-color: #c1f779;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
     }
 
-    .input-container {
-        position: relative;
-        margin-bottom: 30px;
-        border: 2px solid transparent; /* Make border transparent initially */
-        border-radius: 5px; /* Rounded corners for the input container */
-        transition: border-color 0.3s; /* Smooth transition for border color */
+    .sidebar img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
     }
 
-    .floating-label {
-        position: absolute;
-        top: 14px;
-        left: 14px;
-        font-size: 18px;
-        color: #999;
-        transition: 0.2s ease all;
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 30px;
     }
 
-    input {
-        padding: 14px;
-        border-radius: 5px;
-        width: 100%;
-        box-sizing: border-box;
-        border-width: .5px;
+    .sidebar a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      margin-bottom: 20px;
     }
 
-    input:focus + .floating-label,
-    input:not(:placeholder-shown) + .floating-label {
-        top: -25px;
-        left: -14px;
-        font-size: 20px;
-        color: #000000;
+    .sidebar h3 {
+      margin-top: 0;
+      font-size: 24px;
+      font-weight: bold;
     }
 
-    .toggle-password {
-        cursor: pointer;
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 30%;
-      }
-
-      .toggle-password i {
-        font-size: 30px;
-      }
-
-    button {
-        padding: 20px;
-        border: none;
-        background-color: #004aad; /* Initial background color */
-        color: white; /* Text color */
-        font-size: 18px; /* Font size */
-        font-weight: 500;
-        font-family: 'Fira sans', sans-serif; /* Font family */
-        border-radius: 10px; /* Rounded corners */
-        cursor: pointer; /* Pointer cursor on hover */
-        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    /* Main section */
+    .main-section {
+      width: 75%;
+      padding: 40px;
     }
 
-    button:hover {
-        background-color: #004aad; /* Change background on hover */
-        transform: translateY(-4px); /* Lift the button slightly */
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-    }
-
-    .view-password {
-        display: flex;
-        align-items: center;
-        margin: 10px 0;
-        cursor: pointer;
-    }
-    .services {
-      padding: 8px;
-      border: none;
-      background-color: #004aad; /* Initial background color */
-      color: white; /* Text color */
-      font-size: 10px; /* Font size */
-      font-family: 'Fira sans', sans-serif; /* Font family */
-      border-radius: 10px; /* Rounded corners */
-      cursor: pointer; /* Pointer cursor on hover */
-      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin-top: 20px;
     }
 
-    .services:hover {
-      transform: translateY(-5px); /* Move button up on hover */
-      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    table, th, td {
+      border: 1px solid black;
     }
 
-    .icon-chevron-right-services,
-    .icon-chevron-right2-services {
-      width: 10px; /* Icon width */
-      height: 10px; /* Icon height */
-      transition: transform 0.3s ease; /* Add transition for icon movement */
-      transform: rotate(180deg); /* Rotate the icon by 180 degrees */
+    th, td {
+      padding: 10px;
+      text-align: center;
     }
 
-    .services:hover .icon-chevron-right-services,
-    .services:hover .icon-chevron-right2-services {
-      animation: moveLeft 0.8s linear infinite; /* Continuous movement when hovered */
+    th {
+      background-color: #c1f779;
     }
 
-    @keyframes moveLeft {
-      0% {
-        transform: translateX(0) rotate(180deg); /* Start at the original position and rotated */
-      }
-      50% {
-        transform: translateX(-8px) rotate(180deg); /* Move the icons to the left while maintaining rotation */
-      }
-      100% {
-        transform: translateX(0) rotate(180deg); /* Move back to the original position while maintaining rotation */
-      }
-    }
-
-    @media (max-width: 1800px) and (min-width: 720px) {
-  .container {
-  display: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  height: 80%;
-  max-width: 800px;
-  max-height: 800px;
-  padding: 20px;
-  background-color: #4e000000;
-  }
-
-  .video-section {
-    width: 70%;
-    height: 100%;
-  }
-
-  .video-section video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.5);
-  z-index: 15;
-  border-radius: 10px;
-  box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.5);
-}
-
-  .form-section {
-    width: 55%;
-    padding-left: 40px;
-    padding-right: 40px;
-    height: 98%;
-  }
-
-  .return-link {
-  align-self: flex-start;
-  margin-top: 10px;
-}
-
-.return-link a {
-  text-decoration: none;
-  color: blue;
-  font-weight: bold;
-}
-
-.return-link a:hover {
-  text-decoration: underline;
-}
-
-  .input-container {
-    margin-bottom: 25px;
-  }
-
-  .floating-label {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  font-size: 12px;
-  color: #999;
-  transition: 0.2s ease all;
-}
-
-input {
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
-  box-sizing: border-box;
-  border-width: .5px;
-}
-
-input:focus + .floating-label,
-input:not(:placeholder-shown) + .floating-label {
-  top: -25px;
-  left: -14px;
-  font-size: 12px;
-  color: #000000;
-}
-
-  input {
-    padding: 5px;
-  }
-
-  button {
-    padding: 10px;
-    font-size: 12px;
-  }
-
-  .services {
-    font-size: 12px;
-    padding: 6px;
-  }
-
-  .bottom-link {
-    font-size: 8px;
-  }
-
-  .bottom-link a {
-      text-decoration: none;
-      color: blue;
-      font-size: 10px; /* Font size */
-      font-weight: 500;
-      font-family: 'Fira sans', sans-serif; /* Font family */
-    }
-
-  .signin span {
-    font-size: 35px;
-    padding-top: 20px;
-  }
-
-  .toggle-password {
-  cursor: pointer;
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 30%;
-}
-
-.toggle-password i {
-  font-size: 16px;
-}
-.services {
-      padding: 6px;
+    .btn {
+      padding: 8px 10px;
       border: none;
-      background-color: #004aad; /* Initial background color */
-      color: white; /* Text color */
-      font-size: 8px; /* Font size */
-      font-family: 'Fira sans', sans-serif; /* Font family */
-      border-radius: 10px; /* Rounded corners */
-      cursor: pointer; /* Pointer cursor on hover */
-      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+      color: white;
+      background-color: green;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
-.overlay-container {
-    position: absolute;
-    top: 27%; /* Centers vertically based on viewport height */
-    left: 45.3%; /* Centers horizontally */
-    transform: translate(-86%, -20%); /* Ensures the container stays centered */
-    z-index: 16;
-    width: 20%; /* Percentage-based width for responsive scaling */
-    max-width: 400px; /* Adds a max-width to control excessive growth on large screens */
-    padding: 2%; /* Responsive padding */
-    background: rgba(202, 202, 202, 0.3);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ffffff;
-    text-align: center;
-    height: 60%;
-  }
+    /* Style for buttons and search box */
+    .filter-section {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
 
-  .overlay-container img {
-    width: 70%; /* Makes the image responsive within container */
-    height: auto;
-    margin-bottom: 3%;
-  }
+    .filter-section button,
+    .filter-section input {
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
 
-  .overlay-container h2 {
-    font-size: 2vw;
-    max-font-size: 30px;
-    margin: 0;
-    font-family: 'Fira Sans', sans-serif;
-  }
-
-  .overlay-container p {
-    font-size: 1vw;
-    max-font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    margin: 2% 0;
-    
-  }
-}
-
+    .filter-section input {
+      flex-grow: 1;
+    }
   </style>
-
-  <!-- Add JavaScript for success message -->
-  <script>
-    // Show success message if registration is successful and then redirect to login
-    <% if (typeof success !== 'undefined' && success === true) { %>
-      alert("Successfully Registered!");
-      window.location.href = "/login";  // Redirect to login after success
-    <% } %>
-
-    // Toggle password visibility
-    function togglePassword() {
-      const passwordField = document.getElementById("password");
-      const toggleText = document.getElementById("toggleText");
-      const icon = document.getElementById("passwordIcon");
-      if (passwordField.type === "password") {
-        passwordField.type = "text";
-        toggleText.textContent = "Hide Password";
-      } else {
-        passwordField.type = "password";
-        toggleText.textContent = "View Password";
-      }
-    }
-  </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Right Form Section -->
-        <div class="form-section">
-            <button class="services" onclick="location.href='/'" id="ourteam">    
-              <img class="icon-chevron-right-services" src="./assets/icon-chevron-right0.svg" />
-              <img class="icon-chevron-right2-services" src="./assets/icon-chevron-right1.svg" />
-              Return to Homepage
-     </button> 
-            <!-- Back to Login link -->
-            <div class="signin">
-              <span>Signup</span>
-            </div>
-            <!-- Form to submit registration details -->
-            <form action="/register" method="POST">
-                <div class="input-container">
-                    <input type="text" id="fullName" name="fullName" required value="<%= typeof fullName !== 'undefined' ? fullName : '' %>" required placeholder=" ">
-                    <label for="fullName" class="floating-label">Full Name</label>
-                </div>
-
-                <div class="input-container">
-                    <input type="email" id="email" name="email" class="<%= typeof error !== 'undefined' ? 'input-error' : '' %>" placeholder="<%= typeof error !== 'undefined' ? 'Email already exists' : '' %>" value="<%= typeof email !== 'undefined' && typeof error === 'undefined' ? email : '' %>" required>
-                    <label for="email" class="floating-label">Email</label>
-                </div>
-
-                <div class="input-container">
-                    <input type="text" id="contactNumber" name="contactNumber" required value="<%= typeof contactNumber !== 'undefined' ? contactNumber : '' %>" required placeholder=" ">
-                    <label for="contactNumber" class="floating-label">Contact Number</label>
-                </div>
-
-                <div class="input-container">
-                    <input type="text" id="address" name="address" required value="<%= typeof address !== 'undefined' ? address : '' %>" required placeholder=" ">
-                    <label for="address" class="floating-label">Address</label>
-                </div>
-
-                <div class="input-container password-container">
-                  <input type="password" id="password" name="password" required placeholder=" ">
-                  <label for="password" class="floating-label">Password</label>
-                  <span class="toggle-password" onclick="togglePassword()">
-                    <i class="fa fa-eye" id="eyeIcon"></i>
-                  </span>
-                </div>
-
-                <button type="submit">Signup</button>
-            </form>
-            <div class="bottom-link">
-              Already have account? <a href="/login">LOGIN HERE</a>
-            </div>
-        </div>
-
-        <div class="video-section">
-          <video autoplay loop muted playsinline>
-            <source src="/assets/loginstock.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="https://via.placeholder.com/80" alt="Admin Profile Picture">
+      <h2>Admin Name</h2>
+      <a href="/admin/reservations">Reservations</a>
+      <a href="/admin/history">History</a> <!-- New History link -->
+      <a href="/logout">Logout</a>
     </div>
+
+    <!-- Reservation List -->
+    <div class="main-section">
+      <h1>Reservation List</h1>
+
+      <!-- Filter Section: Buttons and Search Box -->
+      <div class="filter-section">
+        <button onclick="location.href='/admin/reservations'">All List</button>
+        <button onclick="location.href='/admin/today-schedule'">Today's Schedule</button>
+        <input type="text" id="search-box" placeholder="Search by owner name" oninput="searchReservations()">
+      </div>
+
+      <table>
+        <tr>
+          <th>Pet Name</th>
+          <th>Breed</th>
+          <th>Owner Name</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Symptoms</th>
+          <th>Vet Card</th>
+        </tr>
+
+        <!-- Loop through reservations -->
+        <% reservations.forEach(reservation => { %>
+        <tr>
+          <td><%= reservation.petName %></td>
+          <td><%= reservation.breed %></td>
+          <td><%= reservation.ownerName %></td>
+          <td><%= reservation.date.toDateString() %></td>
+          <td><%= reservation.time %></td>
+          <td><%= reservation.note %></td>
+          <td>
+            <% if (reservation.vetCard) { %>
+            <a href="/uploads/<%= reservation.vetCard %>" target="_blank">View Vet Card</a>
+            <% } else { %>
+            No vet card
+            <% } %>
+          </td>
+        </tr>
+        <% }) %>
+      </table>
+    </div>
+  </div>
+
+  <!-- JavaScript for Search Functionality -->
+  <script>
+    function searchReservations() {
+      const searchValue = document.getElementById('search-box').value.toLowerCase();
+      const rows = document.querySelectorAll('table tr');
+
+      rows.forEach((row, index) => {
+        if (index === 0) return;  // Skip header row
+        const ownerName = row.cells[2].textContent.toLowerCase();
+        if (ownerName.includes(searchValue)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+  </script>
 </body>
 </html>
